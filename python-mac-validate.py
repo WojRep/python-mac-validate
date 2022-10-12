@@ -22,11 +22,11 @@ def mac_standardize(mac_address, standard=":", character="lower"):
         mac_address = mac_address.upper()
 
     if standard == ":":
-        pass
+        mac_address == mac_address[0-2] + ":" + mac_address[2-4] + ":" + mac_address[4-6] + ":" + mac_address[6-8] + ":" + mac_address[8-10] + ":" + mac_address[10-12]
     elif standard == "-":
-        pass
+        mac_address == mac_address[0-2] + "-" + mac_address[2-4] + "-" + mac_address[4-6] + "-" + mac_address[6-8] + "-" + mac_address[8-10] + "-" + mac_address[10-12]
     elif standard == ".":
-        pass
+        mac_address == mac_address[0-3] + "." + mac_address[3-6] + "." + mac_address[6-9] + "." + mac_address[9-12]
 
     return mac_address
 
